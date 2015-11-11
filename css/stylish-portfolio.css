@@ -115,6 +115,79 @@ hr.small {
 
 
 
+.sldwrapper {
+    height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+    }
+
+    .sldbtn {
+        width: 33.3%;
+      float: left;
+      line-height: 60px;
+      text-decoration: none;
+      color: inherit;
+      
+
+        }
+        .active {
+            font-weight: bold;
+             background: #78909c;
+             color: #ffffff;
+            }
+.btn:hover{
+    color: #555555;
+}
+.btn:focus,
+.btn:active {
+    color: #ffffff;
+    
+}
+
+hr {
+    display: block;
+  height: 0;
+  clear: both;
+  border: none;
+    }
+
+.slides {
+    width: auto;
+  height: 100%;
+  overflow: hidden;
+    }
+  .sld {
+    width: 100%;
+    height: 100%;
+    line-height: 45px;
+    transition: margin .3s;
+    font-weight: bold;
+    padding-top: 6%;
+    text-align:center;
+    }
+    .sld:first-of-type {
+    
+    }
+    .slides .sld:nth-of-type(2) {
+    
+    }
+    .slides .sld:nth-of-type(3) {
+    
+    }
+    
+
+.btn.active ~ .slides .sld:first-of-type {
+  margin-top: 0;
+    }
+.btn:nth-of-type(2).active ~ .slides .sld:first-of-type {
+  margin-top: -400px;    
+    }
+.btn:nth-of-type(3).active ~ .slides .sld:first-of-type {
+  margin-top: -800px;
+    }
+
+
+
 
 /*try*/
 .try{
@@ -163,4 +236,37 @@ footer {
     background-color: #b0bec5;
 }
 
+/*btn RWD*/
+@media (max-width: 700px) {
+.btn {
+        width: 100%;
+      line-height: 40px;
+      text-decoration: none;
+      text-align: center;
+        }
+.sldwrapper {
+    height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 1em;
+    } 
+.sld div {
+    
+    margin-top: 30%;
+    line-height: 50px;
+}
+.btn.active ~ .slides .sld:first-of-type {
+  margin-top: 0;
+    }
+.btn:nth-of-type(2).active ~ .slides .sld:first-of-type {
+  margin-top: -600px;    
+    }
+.btn:nth-of-type(3).active ~ .slides .sld:first-of-type {
+  margin-top: -1200px;
+    }
+    sld{
+    line-height: 45px;
+}
+}
 
+}
